@@ -1,3 +1,4 @@
+
 function [J gradiente] = funcao_custo(X, y, parametros, tamanhoInput, tamanhoEscondida, tamanhoOutput, lambda)
 % A funcao de custo calcula o custo e o gradiente de uma rede neural com uma camada
 % escondida
