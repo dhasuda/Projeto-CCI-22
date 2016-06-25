@@ -29,7 +29,7 @@ tamanhoOutput = 10; % O 10 representa o número 0
 
 load('imagens.mat');
 fprintf('Imagens carregadas!');
-fprintf('Programa pausado. Pressione enter para continuar...');
+%fprintf('Programa pausado. Pressione enter para continuar...');
 
 % Cada imagem eh representada por um vetor 1x400, e todas estao juntas na
 % matriz X(250x400). Ja o vetor y representa o valor de cada algarismo
@@ -54,7 +54,7 @@ parametros_treinados = treinar(X, y, parametros_iniciais, tamanhoInput, tamanhoC
 
 theta1 = reshape(parametros_treinados(1:tamanhoCamadaEscondida*(tamanhoInput+1)),...
     tamanhoCamadaEscondida, (tamanhoInput + 1));
-theta1 = reshape(parametros_treinados(1 + (tamanhoCamadaEscondida*(tamanhoInput+1))):end,...
+theta2 = reshape(parametros_treinados(1 + tamanhoCamadaEscondida*(tamanhoInput+1):end,...
     tamandoCamadaEscondida, (tamanhoInput + 1));
 
 fprintf('\nParâmetros treinados! Pressione enter para continuar\n');

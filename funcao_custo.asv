@@ -28,11 +28,8 @@ for i=1:m
        coluna(10) = 1;
    end
    Y(:, i) = coluna;
-   if y(i) ~= 0
-        coluna(y(i)) = 0;
-   else
-       coluna(10) = 0;
-   end
+   if 
+    coluna(y(i)) = 0;
 end % Contruída a matriz com as respostas esperadas para cada imagem
 
 erro3 = X3 - Y;

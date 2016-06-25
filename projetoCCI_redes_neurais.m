@@ -54,8 +54,8 @@ parametros_treinados = treinar(X, y, parametros_iniciais, tamanhoInput, tamanhoC
 
 theta1 = reshape(parametros_treinados(1:tamanhoCamadaEscondida*(tamanhoInput+1)),...
     tamanhoCamadaEscondida, (tamanhoInput + 1));
-theta1 = reshape(parametros_treinados(1 + (tamanhoCamadaEscondida*(tamanhoInput+1))):end,...
-    tamandoCamadaEscondida, (tamanhoInput + 1));
+theta2 = reshape(parametros_treinados((1 + tamanhoCamadaEscondida*(tamanhoInput+1)):end),...
+    tamanhoOutput, (tamanhoCamadaEscondida+ 1));
 
 fprintf('\nParâmetros treinados! Pressione enter para continuar\n');
 pause;
