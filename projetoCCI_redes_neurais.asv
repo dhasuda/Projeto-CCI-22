@@ -29,7 +29,7 @@ tamanhoOutput = 10; % O 10 representa o número 0
 
 load('imagens.mat');
 fprintf('Imagens carregadas!');
-%fprintf('Programa pausado. Pressione enter para continuar...');
+fprintf('Programa pausado. Pressione enter para continuar...');
 
 % Cada imagem eh representada por um vetor 1x400, e todas estao juntas na
 % matriz X(250x400). Ja o vetor y representa o valor de cada algarismo
