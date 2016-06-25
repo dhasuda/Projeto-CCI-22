@@ -1,4 +1,6 @@
-function [J gradiente] = funcao_custo(X, y, parametros, tamanhoInput, tamanhoEscondida, tamanhoOutput, lambda)
+function ...
+    [J gradiente] = ...
+    funcao_custo(X, y, parametros, tamanhoInput, tamanhoEscondida, tamanhoOutput, lambda)
 % A funcao de custo calcula o custo e o gradiente de uma rede neural com uma camada
 % escondida
 
@@ -53,6 +55,8 @@ theta1 = theta1 .^2;
 theta2 = theta2 .^2;
 a = size(aux, 1);
 b = size(aux, 2);
-J = (ones(1, a) * aux * ones(b, 1) + (lambda/2)*(ones(1, size(theta1, 1)) * theta1 * ones(size(theta1, 2), 1) + ones(1, size(theta2, 1)) *  theta2 * ones(size(theta2, 2), 1)))/m;
+J = (ones(1, a) * aux * ones(b, 1) + (lambda/2)*(ones(1, size(theta1, 1))...
+    * theta1 * ones(size(theta1, 2), 1) ...
+    + ones(1, size(theta2, 1)) *  theta2 * ones(size(theta2, 2), 1)))/m;
 
 end

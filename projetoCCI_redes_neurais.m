@@ -27,7 +27,7 @@ tamanhoInput = 400;
 tamanhoCamadaEscondida = 25;
 tamanhoOutput = 10; % O 10 representa o número 0
 
-load('imagens.mat');
+load('ex4data1.mat');
 fprintf('Imagens carregadas!');
 %fprintf('Programa pausado. Pressione enter para continuar...');
 
@@ -58,10 +58,8 @@ theta2 = reshape(parametros_treinados((1 + tamanhoCamadaEscondida*(tamanhoInput+
     tamanhoOutput, (tamanhoCamadaEscondida+ 1));
 
 fprintf('\nParâmetros treinados! Pressione enter para continuar\n');
-pause;
-
 
 %% =========== Parte 3:  Ler novas imagens e adivinhar! =============
-imgem = X;
+imagem = X;
 [pred, prob] = adivinhar(theta1, theta2, imagem);
 display(pred);
