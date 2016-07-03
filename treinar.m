@@ -1,6 +1,6 @@
 function parametros = treinar(X, y, parametros_iniciais, tamanhoInput, tamanhoEscondida, tamanhoOutput, lambda)
-maxIteracoes = 50;
-passo = 0.05;
+maxIteracoes = 1000;
+passo = 0.01;
 parametros = parametros_iniciais;
 J = 0;
 
